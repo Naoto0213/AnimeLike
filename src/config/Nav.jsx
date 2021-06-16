@@ -1,4 +1,4 @@
-export const HeaderNav = [
+export const Nav = [
   {
     title: "お気に入り",
     img: (

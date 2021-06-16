@@ -26,5 +26,5 @@ code {
 }
 
 .link {
-  @apply hover:opacity-80;
+  @apply hover:opacity-80 focus:outline-none;
 }

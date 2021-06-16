@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderNav } from "../../config/HeaderNav";
+import { Nav } from "../../config/Nav";
 import { HeaderNavType } from "../../types/HeaderNavType";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const Header: React.VFC = () => {
         <div className="whiteFont text-2xl link">Anime Like</div>
       </Link>
       <div className="flex">
-        {HeaderNav.map((navItems: HeaderNavType) => {
+        {Nav.map((navItems: HeaderNavType) => {
           return (
             <div className="pr-8" key={navItems.title}>
               <Link to={navItems.to}>
