@@ -1,16 +1,10 @@
-import React from "react";
-import "./App.css";
-import Header from "./components/common/Header";
-import Main from "./components/pages/home/Main";
-import TopAnime from "./components/common/Slide/TopAnime";
-function App() {
+import { BrowserRouter } from "react-router-dom";
+import Router from "./containers/Router";
+
+export default function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <TopAnime>人気アニメ</TopAnime>
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
-
-export default App;
