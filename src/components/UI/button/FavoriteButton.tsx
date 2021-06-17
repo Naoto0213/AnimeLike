@@ -6,8 +6,9 @@ const FavoriteButton: React.VFC = () => {
       className="
           link
           blackFont
+          hover:text-yellow-500
           focus:text-yellow-500
-          focus:outline-none"
+        "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

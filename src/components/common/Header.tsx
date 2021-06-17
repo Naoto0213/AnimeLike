@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header: React.VFC = () => {
   return (
-    <div className="bg-yellow-500 h-16 flex items-center justify-between px-28">
+    <div className="bg-yellow-500 h-16 flex items-center justify-between px-28 fixed inset-0 z-50">
       <Link to="/">
         <div className="whiteFont text-2xl link">Anime Like</div>
       </Link>

@@ -3,13 +3,17 @@ import Cards from "../../UI/animeCards/Cards";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SliderTypes } from "../../../types/SliderConfig";
+import { Link } from "react-router-dom";
 
 export type Props = {
   children: string;
+  link: string;
 };
 
-const TopAnime: React.VFC<Props> = ({ children }) => {
-  const settings = {
+const TopAnime: React.VFC<Props> = ({ children, link }) => {
+  // Slickの設定
+  const settings: SliderTypes = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -35,11 +39,25 @@ const TopAnime: React.VFC<Props> = ({ children }) => {
     ],
   };
   return (
-    <>
-      <p className="text-center blackFont text-2xl">{children}</p>
-
-      <div className="mt-12 px-12 md:px-16 lg:px-32 xl:px-64 2xl:px-96">
+    <div className="px-12 md:px-16 lg:px-32 xl:px-64 2xl:px-96">
+      <div className="text-center">
+        <p className="inline-block blackFont text-2xl border-b-2 border-yellow-500 ">
+          {children}
+        </p>
+        <Link to={link}>
+          <p className="text-yellow-700 font-bold text-xs text-right link pr-4">
+            全て見る
+          </p>
+        </Link>
+      </div>
+      <div className="mt-3 ">
         <Slider {...settings}>
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
           <Cards />
           <Cards />
           <Cards />
@@ -48,7 +66,7 @@ const TopAnime: React.VFC<Props> = ({ children }) => {
           <Cards />
         </Slider>
       </div>
-    </>
+    </div>
   );
 };
 
