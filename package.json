@@ -12,10 +12,13 @@
     "@types/node": "^12.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
+    "@types/slick-carousel": "^1.6.34",
     "aws-amplify": "^4.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -45,6 +48,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.11",
+    "@types/react-slick": "^0.23.4",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "react-router-dom": "^5.2.0",
