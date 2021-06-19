@@ -16,6 +16,7 @@ const Main: React.VFC = () => {
         <PrimaryButton link="login">ログイン</PrimaryButton>
       </div>
       <div className="bg-gray-100 py-1">
+        {/* TOP_SLIDER_CARDの変数の数だけ表示 */}
         {TOP_SLIDER_CARD.map((items: TopSliderCardType) => {
           return (
             <div className="mt-16">

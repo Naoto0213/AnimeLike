@@ -1,24 +1,25 @@
-export type TopSliderCardType = {
-  title: string,
-  link: string,
-};
+import { Links } from "./Links";
 
+export type TopSliderCardType = {
+  title: string;
+  link: string;
+};
 
 export const TOP_SLIDER_CARD = [
   {
     title: "人気アニメ",
-    link: "/",
+    link: Links.POPULAR,
   },
   {
     title: "新着アニメ",
-    link: "/",
+    link: Links.NEW_ANIME,
   },
   {
     title: "あなたへのおすすめ",
-    link: "/",
+    link: Links.RECOMMENDED,
   },
   {
     title: "今期のアニメ",
-    link: "/",
+    link: Links.NOW_ANIME,
   },
 ];

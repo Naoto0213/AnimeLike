@@ -1,3 +1,4 @@
+import { Links } from './Links';
 export const Nav = [
   {
     title: "お気に入り",
@@ -17,7 +18,7 @@ export const Nav = [
         />
       </svg>
     ),
-    to: "/favorite",
+    to: Links.FAVORITE,
   },
   {
     title: "検索",
@@ -37,7 +38,7 @@ export const Nav = [
         />
       </svg>
     ),
-    to: "/search",
+    to: Links.SEARCH,
   },
   {
     title: "マイページ",
@@ -57,7 +58,7 @@ export const Nav = [
         />
       </svg>
     ),
-    to: "/profile",
+    to: Links.MY_PAGE,
   },
   {
     title: "ログイン",
@@ -77,6 +78,6 @@ export const Nav = [
         />
       </svg>
     ),
-    to: "/login",
+    to: Links.LOGIN,
   },
 ];
